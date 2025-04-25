@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_test_22/screens/home.dart';
-
+import 'package:flutter_test_22/screens/game.dart';
 
 void main(){
-     runApp(const MyApp());
+  runApp(const MyApp());
 }
-
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-   Widget build(BuildContext context){
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: Colors.transparent));
-  return MaterialApp(
-    debugShowCheckedModeBanner: false,
-    title: 'ToDo App',
-    home: Home(),
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: GameScreen(),
     );
   }
 }
